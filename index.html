@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ていおんくん サポート</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            --main-color: #F57873;
+        }
+        h1, h2, summary {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+        }
+        details > summary {
+            cursor: pointer;
+        }
+        details[open] > summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        
+        <div class="bg-white p-6 sm:p-10 rounded-xl shadow-sm">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl sm:text-4xl font-bold">ていおんくん サポート</h1>
+                <p class="text-gray-600 mt-2">ご利用ありがとうございます。問題解決のための情報をご案内します。</p>
+            </div>
+
+            <div class="space-y-10">
+                <div>
+                    <h2 class="text-xl font-semibold border-l-4 pl-4 mb-4" style="border-color: var(--main-color);">よくあるご質問 (FAQ)</h2>
+                    <div class="space-y-4">
+                        <details class="group rounded-lg bg-gray-50 p-4">
+                            <summary class="font-semibold text-lg list-none hover:text-red-500" style="--tw-hover-text-opacity: 1; color: var(--main-color);">Q. 計算結果の安全性は保証されますか？</summary>
+                            <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                本アプリが提示する調理時間と温度は、株式会社BONIQが公開している「低温調理 加熱時間基準表」のデータを参考に算出しています。安全性を担保できるよう努めておりますが、これはあくまで調理の一助となる目安です。食材の初期温度、厚みの個体差、調理器具の性能など様々な要因により結果は変動する可能性があります。本アプリの利用により万が一、食中毒などの問題が発生した場合でも、当方は一切の責任を負いかねますので、あらかじめご了承ください。最終的な安全確認は、利用者ご自身の責任において行っていただきますようお願いいたします。
+                            </p>
+                        </details>
+                        <details class="group rounded-lg bg-gray-50 p-4">
+                            <summary class="font-semibold text-lg list-none hover:text-red-500" style="--tw-hover-text-opacity: 1; color: var(--main-color);">Q. 計算した履歴データはどこに保存されますか？</summary>
+                            <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                お客様が計算した履歴は、お使いのスマートフォン・タブレットの内部にのみ保存されます。当方のサーバーを含め、外部にデータが送信・保管されることは一切ありませんので、ご安心ください。
+                            </p>
+                        </details>
+                        <details class="group rounded-lg bg-gray-50 p-4">
+                            <summary class="font-semibold text-lg list-none hover:text-red-500" style="--tw-hover-text-opacity: 1; color: var(--main-color);">Q. 機種変更をします。データを引き継ぐことはできますか？</summary>
+                            <p class="text-gray-700 leading-relaxed mt-3 pt-3 border-t">
+                                現在、本アプリには専用のデータバックアップおよび引き継ぎ機能はありません。
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold border-l-4 pl-4 mb-4" style="border-color: var(--main-color);">お問い合わせ</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        上記のFAQで問題が解決しない場合や、ご意見・ご要望がございましたら、以下のメールアドレスまでお気軽にご連絡ください。
+                    </p>
+                    <div class="mt-4 text-center">
+                        <a href="mailto:masaki.cho.1107@gmail.com" class="inline-block text-white font-bold py-3 px-6 rounded-lg transition-colors" style="background-color: var(--main-color);">
+                            masaki.cho.1107@gmail.com
+                        </a>
+                    </div>
+                </div>
+                 <div>
+                    <h2 class="text-xl font-semibold border-l-4 pl-4 mb-4" style="border-color: var(--main-color);">関連リンク</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        <a href="./privacy-policy.html" class="hover:underline" style="color: var(--main-color);">プライバシーポリシーはこちら</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-sm text-gray-400 mt-12 pt-6 border-t">
+                &copy; 2025 Masaki Cho. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
